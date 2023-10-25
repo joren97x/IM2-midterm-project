@@ -30,7 +30,7 @@
         $studAss = new StudentAssignment();
         $sa = $studAss->getStudentAssignmentById($_GET['id']);
     ?>
-        <p class="card-text">Are you sure you want to delete <strong><?php echo $sa[0]['fname'] . ' ' . $sa[0]['lname']; ?></strong> with assignments <strong> <?php echo $sa[0]['assignment_1']; ?> </strong> and <strong> <?php echo $sa[0]['assignment_2']; ?> </strong> </p>
+        <p class="card-text">Are you sure you want to delete <strong><?php echo $sa[0]['fname'] . ' ' . $sa[0]['lname']; ?></strong> with assignments <strong> <?php echo $sa[0]['assignment_1']; ?> </strong> and <strong> <?php echo $sa[0]['assignment_2']; ?></strong>? </p>
         <div class="text-end">
         <a href="entry.php" class="btn btn-secondary">Cancel</a>
         <button class="btn btn-danger" value="submit" type="submit" name="submit">Fordagoo</button>

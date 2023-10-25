@@ -117,7 +117,7 @@ use function PHPSTORM_META\type;
             </thead>
         </table>
     </div>
-    <div class="col-6">
+    <div class="col-6 p-2">
         <table class="table table-striped table-hover table-bordered">
             <thead class="text-center">
                 <tr>
@@ -172,7 +172,7 @@ use function PHPSTORM_META\type;
         
       <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Student</span>
-            <Select name='student_id' class="form-control">
+            <Select name='student_id' class="form-select">
                     <?php
                      $ass = new Student();
                      $assRec = $ass->getAllStudent();
@@ -186,7 +186,7 @@ use function PHPSTORM_META\type;
       </div>
                 <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Assignment 1</span>
-                <Select name='assignment1_id' class="form-control">
+                <Select name='assignment1_id' class="form-select">
                 <?php
                      $ass = new Assignment();
                      $assRec = $ass->getAllAssignments();
@@ -202,7 +202,7 @@ use function PHPSTORM_META\type;
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Assignment 2</span>
-             <Select name='assignment2_id' class="form-control">
+             <Select name='assignment2_id' class="form-select">
                     <?php
                      $ass = new Assignment();
                      $assRec = $ass->getAllAssignments();
@@ -218,7 +218,7 @@ use function PHPSTORM_META\type;
 
         <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" value="Submit" class="btn btn-primary">Save changes</button>
+        <button type="submit" value="Submit" class="btn btn-success">Add student assignment</button>
       </div>
     </form>
      
@@ -240,7 +240,7 @@ use function PHPSTORM_META\type;
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" value="Submit" class="btn btn-primary">Save changes</button>
+        <button type="submit" value="Submit" class="btn btn-success">Add assignment</button>
       </div>
     </form>
      
@@ -276,7 +276,7 @@ use function PHPSTORM_META\type;
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" value="Submit" class="btn btn-primary">Save changes</button>
+        <button type="submit" value="Submit" class="btn btn-success">Add student</button>
       </div>
     </form>
      
